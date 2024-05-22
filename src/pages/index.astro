@@ -1,0 +1,25 @@
+---
+import ButtonArea from '../components/ButtonArea.astro';
+import Header from '../components/Header.astro';
+import SocialMedia from '../components/SocialMedia.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Quiver">
+  <div class="relative">
+    <div class="absolute h-5/6 w-full xl:w-1/2 border-white">
+      <Header>Casa Sonia</Header>
+      <ButtonArea />
+      <SocialMedia />
+    </div>
+
+    <style></style>
+  </div>
+</Layout>
+<style>
+  .absolute {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+</style>
